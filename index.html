@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santosh Mahato | Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header & Navigation -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold">Santosh Mahato</h1>
+      <nav>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#welcome" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#achievements" class="hover:text-blue-600">Achievements</a></li>
+          <li><a href="#personal" class="hover:text-blue-600">Personal</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="#welcome" class="block">Home</a></li>
+        <li><a href="#about" class="block">About</a></li>
+        <li><a href="#achievements" class="block">Achievements</a></li>
+        <li><a href="#personal" class="block">Personal</a></li>
+        <li><a href="#contact" class="block">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Welcome Section -->
+    <section id="welcome" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-200 to-green-200">
+      <img src="photo.jpg" alt="Santosh Mahato" class="profile-img">" 
+      <h2 class="text-4xl font-bold mb-2">Welcome!</h2>
+      <p class="mb-6 text-lg text-gray-700">I’m Santosh Mahato, an engineering student & aspiring web developer.</p>
+      <div class="w-full max-w-xl">
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-16 container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p><strong>Name:</strong> Santosh Mahato</p>
+          <p><strong>Location:</strong> Maharasathra,India</p>
+          <p><strong>Education:</strong> B.E in Computer Science, St.john College of engineering and management</p>
+          <p><strong>Languages:</strong> English, Hindi,Marathi</p>
+        </div>
+        <div>
+          <p>I am passionate about building web applications and exploring new technologies. I enjoy collaborating with teams and learning through hands-on projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Goals -->
+    <section id="achievements" class="py-16 bg-white">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-semibold mb-6">Achievements & Future Goals</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-2xl font-semibold mb-4">Achievements</h4>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Personal Expense Tracker project using SQL & .NET (Internship)</li>
+                <li>Tic Tak Tok game using C++</li> 
+              <li>Volunteer, Local Tech Workshop</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold mb-4">Future Goals</h4>
+            <ul class="list-disc list-inside space-y-2">
+              <li>🔭 Build open-source tools for students</li>
+              <li>🚀 Launch my own tech startup</li>
+              <li>🎓 Pursue a master's in AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Side -->
+    <section id="personal" class="py-16 container mx-auto">
+      <h3 class="text-3xl font-semibold mb-6">Personal Side</h3>
+      <!-- Hobbies -->
+      <div class="mb-12">
+        <h4 class="text-2xl font-semibold mb-4">Hobbies</h4>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-4 bg-gray-100 rounded-lg shadow">
+            <h5 class="font-semibold mb-2">Photography</h5>
+            <p>I love capturing moments and experimenting with light and composition.</p>
+          </div>
+          <div class="p-4 bg-gray-100 rounded-lg shadow">
+            <h5 class="font-semibold mb-2">Reading</h5>
+            <p>I enjoy reading sci-fi novels and tech blogs to stay inspired.</p>
+          </div>
+          <div class="p-4 bg-gray-100 rounded-lg shadow">
+            <h5 class="font-semibold mb-2">Gaming</h5>
+            <p>Strategy games help me unwind and sharpen my problem-solving skills.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Role Models -->
+      <div class="mb-12">
+        <h4 class="text-2xl font-semibold mb-4">Role Models</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Elon Musk</strong> – Visionary entrepreneur driving innovation in multiple industries.</li>
+          <li><strong>Sundar Pichai</strong> – Inspires me with his leadership and commitment to technology for good.</li>
+        </ul>
+      </div>
+      <!-- Favorites & Volunteering -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Favorites</h4>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Book:</strong> "Clean Code" by Robert C. Martin</li>
+            <li><strong>Website:</strong> MDN Web Docs</li>
+            <li><strong>Startup:</strong> GitHub – for empowering developers.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Volunteering</h4>
+          <p>Assisted in organizing coding bootcamps for underprivileged students in Kolkata.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-6">Get in Touch</h3>
+        <p>Email: <a href="mailto:santosh@example.com" class="text-blue-600 underline">santoshkumarmahato284@gmail.com </a></p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a href="https://github.com/SantoshMahat9"target="_blank">GitHub</a>
+          <a href="www.linkedin.com/in/santoshmah" target="_blank">LinkedIn</a>
+       </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
